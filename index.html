@@ -24,8 +24,61 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>TAYRYY</title>
+
+    <style type="text/css">
+        #whatsapp .wtsapp{
+          position: fixed;
+          transform: all .5s ease;
+          background-color: #25d366;
+          display: block;
+          text-align: center;
+          box-shadow: 0 0 20px rgba(0,0,0,0.15);
+          border-radius: 50px;
+          border-right: none;
+          color: #fff;
+          font-weight: 700;
+          font-size: 30px;
+          bottom: 70px;
+          left: 20px;
+          border: 0;
+          z-index: 9999;
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+        }
+        #whatsapp .wtsapp::before{
+          content: "";
+          position: absolute;
+          z-index: -1;
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          display: block;
+          width: 60px;
+          height: 60px;
+          background-color: #25d366;
+          border-radius: 50%;
+          -webkit-animation:pulse-border 1500ms ease-out infinite;
+          animation: pulse-border 1500ms ease-out infinite;
+        }
+        #whatsapp .wtsapp:focus{
+          border: none;
+          outline: none;
+        }
+
+        @keyframes pulse-border{
+          0%{transform: translateX(-50%) translateY(-50) translateZ(0) scale(1); opacity: 1;}
+          100%{transform: translateX(-50%) translateY(-50) translateZ(0) scale(1.5); opacity: 0;}
+
+        }
+    </style>
   </head>
   <body>
+
+    <div id="whatsapp">
+      <a href="https://wsend.co/212652330982" target="_blank" id="toggle1" class="wtsapp"><i class='bx bxl-whatsapp'></i></a>
+    </div>
+
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
@@ -273,8 +326,8 @@
               <span class="new__subtitle">نعومة / وسامة</span>
 
               <div class="new__prices">
-                <span class="new__price">199DH</span>
-                <span class="new__discount">249DH</span>
+                <span class="new__price">149DH</span>
+                <span class="new__discount">199DH</span>
               </div>
 
               <button class="button new__button">
@@ -291,8 +344,8 @@
               <span class="new__subtitle">توحيد / بياض</span>
 
               <div class="new__prices">
-                <span class="new__price">199DH</span>
-                <span class="new__discount">249DH</span>
+                <span class="new__price">149DH</span>
+                <span class="new__discount">199DH</span>
               </div>
 
               <button class="button new__button">
@@ -309,8 +362,8 @@
               <span class="new__subtitle">جدابة / منعشة</span>
 
               <div class="new__prices">
-                <span class="new__price">199DH</span>
-                <span class="new__discount">249DH</span>
+                <span class="new__price">149DH</span>
+                <span class="new__discount">199DH</span>
               </div>
 
               <button class="button new__button">
@@ -339,8 +392,8 @@
                 <img src="assets/img/1-removebg-preview.png" alt="" class="new__img" />
                 <h3 class="new__title">x 2</h3>
                 <div class="new__prices">
-                  <span class="new__price">299DH</span>
-                  <span class="new__discount">349DH</span>
+                  <span class="new__price">229DH</span>
+                  <span class="new__discount">299DH</span>
                 </div>
 
                 <button class="button new__button">
@@ -355,8 +408,8 @@
                 <img src="assets/img/2-removebg-preview.png" alt="" class="new__img" />
                 <h3 class="new__title">x 2</h3>
                 <div class="new__prices">
-                  <span class="new__price">299DH</span>
-                  <span class="new__discount">349DH</span>
+                  <span class="new__price">229DH</span>
+                  <span class="new__discount">299DH</span>
                 </div>
 
                 <button class="button new__button">
@@ -371,8 +424,8 @@
                 <img src="assets/img/3-removebg-preview.png" alt="" class="new__img" />
                 <h3 class="new__title">x 2</h3>
                 <div class="new__prices">
-                  <span class="new__price">299DH</span>
-                  <span class="new__discount">349DH</span>
+                  <span class="new__price">229DH</span>
+                  <span class="new__discount">299DH</span>
                 </div>
 
                 <button class="button new__button">
@@ -387,8 +440,8 @@
                 <img src="assets/img/4-removebg-preview.png" alt="" class="new__img" />
                 <h3 class="new__title">x 3</h3>
                 <div class="new__prices">
-                  <span class="new__price">399DH</span>
-                  <span class="new__discount">499DH</span>
+                  <span class="new__price">299DH</span>
+                  <span class="new__discount">349DH</span>
                 </div>
 
                 <button class="button new__button">
